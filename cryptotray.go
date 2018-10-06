@@ -11,7 +11,7 @@ import (
 	"github.com/getlantern/systray"
 )
 
-// Response struct which contains
+// Price is a response struct which contains
 // last market price
 type Price struct {
 	MarketName string `json:"market"`
@@ -23,7 +23,13 @@ func main() {
 }
 
 func onReady() {
-	systray.SetIcon(getIcon("assets/Raindropmemory-Legendora-Coin.ico"))
+
+	data, err := Asset("assets/Raindropmemory-Legendora-Coin.ico")
+	if err != nil {
+		// Asset was not found.
+	}
+
+	systray.SetIcon(data)
 	systray.SetTooltip("Última cotação do Bitcoin na Braziliex")
 
 	go func() {

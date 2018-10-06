@@ -7,3 +7,4 @@ Instale o pacote na sua máquina
 
 Se os binários do Go não estiverem em seu _PATH_ execute o comando:
 `go run jcserracampos/cryptotray/cryptotray.go`
+
