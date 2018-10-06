@@ -1,5 +1,10 @@
-## Cryptotray
+# cryptotray
+Receba a última cotação do Bitcoin em sua barra de atividades
 
-Um pequeno aplicativo para sua barra de notificações escrito em Go. Monitore o preço do Bitcoin em Reais em tempo real.
+## Como usar
+Instale o pacote na sua máquina
+`go get github.com:jcserracampos/cryptotrat`
 
-Você pode obtê-lo com `go get -u github.com/jcserracampos/cryptotray`
+Se os binários do Go não estiverem em seu _PATH_ execute o comando:
+`go run jcserracampos/cryptotray/cryptotray.go`
+
